@@ -17,5 +17,12 @@ namespace tdd_kata1_tests {
             Assert.AreEqual( stringCalculator.Solve( "" ), 0 );
             Assert.AreEqual(stringCalculator.Solve("  "), 0);
         }
+
+        [TestMethod]
+        public void solveOneAndTwoNumbers()
+        {
+            Assert.AreEqual(stringCalculator.Solve("2"), 2);
+            Assert.AreEqual(stringCalculator.Solve("1,3"), 4);
+        }
     }
 }
