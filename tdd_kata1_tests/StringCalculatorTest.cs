@@ -15,6 +15,7 @@ namespace tdd_kata1_tests {
         [TestMethod]
         public void solveNoInput() {
             Assert.AreEqual( stringCalculator.Solve( "" ), 0 );
+            Assert.AreEqual(stringCalculator.Solve("  "), 0);
         }
     }
 }

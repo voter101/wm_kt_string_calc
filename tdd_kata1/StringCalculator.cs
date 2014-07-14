@@ -7,7 +7,15 @@ using System.Threading.Tasks;
 namespace tdd_kata1 {
     public class StringCalculator {
         public int Solve(string input) {
-            return 1; 
+            input = input.Trim();
+            if (input.Length == 0)
+            {
+                return 0;
+            }
+            else
+            {
+                return 1;
+            }
         }
     }
 }
